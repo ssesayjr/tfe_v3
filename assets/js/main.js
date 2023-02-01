@@ -102,7 +102,23 @@
 		if ($banner.length > 0)
 			$banner._parallax(0.25);
 
-	// Menu.
+	// logBan.
+		$('#logBan')
+			.append('<a href="#logBan" class="close"></a>')
+			.appendTo($body)
+			.panel({
+				target: $body,
+				visibleClass: 'is-logBan-visible',
+				delay: 500,
+				hideOnClick: true,
+				hideOnSwipe: true,
+				resetScroll: true,
+				resetForms: true,
+				side: 'right'
+			});
+
+
+	// logBan.
 		$('#menu')
 			.append('<a href="#menu" class="close"></a>')
 			.appendTo($body)
@@ -117,4 +133,6 @@
 				side: 'right'
 			});
 
+
 })(jQuery);
+

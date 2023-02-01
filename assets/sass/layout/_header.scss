@@ -62,7 +62,7 @@
 					color: _palette($accent, fg-bold);
 				}
 
-				&[href="#menu"] {
+				&[href="#logBan"] {
 					@include icon(false, solid);
 					letter-spacing: 0.1rem;
 					padding-right: 3rem;
