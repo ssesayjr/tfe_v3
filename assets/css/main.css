@@ -4008,6 +4008,7 @@ input, select, textarea {
 
 			#banner {
 				background-attachment: scroll;
+				background-size: auto;
 				height: 80vh;
 				min-height: 35rem;
 			}
@@ -4045,6 +4046,7 @@ input, select, textarea {
 
 			#banner {
 				height: auto;
+				background-size: auto;
 				min-height: 38rem;
 			}
 
