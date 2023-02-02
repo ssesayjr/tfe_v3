@@ -4008,7 +4008,7 @@ input, select, textarea {
 
 			#banner {
 				background-attachment: scroll;
-				background-size: auto;
+				background-size: 80vh;
 				height: 80vh;
 				min-height: 35rem;
 			}
@@ -4045,8 +4045,8 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#banner {
+				background-size: 85vh;
 				height: auto;
-				background-size: auto;
 				min-height: 38rem;
 			}
 

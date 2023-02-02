@@ -55,6 +55,7 @@
 
         #shell > .cube {
             margin: 0 auto;
+            font-size: 3rem;
             max-width: 35rem;
         }
 
@@ -90,6 +91,7 @@
     }
 
         #shell > .cube {
+            font-size: 2rem;
             padding: 0 1.5rem;
         }
 
