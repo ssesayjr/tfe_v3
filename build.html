@@ -8,6 +8,7 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/imgAnimation.css" />
 		<link rel="shortcut icon" href="./images/butterfly.png">
 
 
@@ -43,12 +44,61 @@
 					<header class="heading major">
 						<h1>How We Build</h1>
 					</header>
+
+				<!--Image Animation-->	
+					<div class="shell">
+						<div class="cube">
+						  <img src="./images/large/d_conference.png" onclick="descripA()">
+						  <span>Coaching</span>
+						</div>
+						<div class="cube">
+						  <img src="./images/large/d_together_2.png" onclick="descripB()">
+						  <span>Assessments</span>
+						</div>
+						<div class="cube">
+						  <img src="./images/large/d_together.png" onclick="descripC()">
+						  <span>Workshops</span>
+						</div>
+						<div class="cube">
+						  <img src="./images/large/together_up.png" onclick="descripD()">
+						  <span>Discussions</span>
+						</div>
+					</div>
+
+				<!-- Original Content-->
 					<div class="inner" style="overflow: hidden;">
 						<div>
 							<div class="image" style="float: left; padding-right: 40px;" >
-								<img src="images/d_conference.png"/>
+								<img id="descripImage" src="images/d_conference.png"/>
 							</div>
-							<div class="content" >
+							<div id="descContent" class="content show">
+								<ul style="text-align: justify;">
+									<li>Individual coaching for organizational leaders to support centering antiracism thinking and action.	</li>
+									<li>Organizational assessments to help understand where structural inequities exist and provide  strategies to improve diversity, equity and belonging within the institution.</li>
+									<li>Intensive facilitated small group discussions to raise self-awareness of race, the impact of race in our society and communities including in organizations and institutions, increase feelings of belonging and develop racial stamina in order to be antiracist.</li>
+									<li>Facilitation coaching to scale the antiracist work to your organization.</li>
+									<li>Tailored and targeted workshops to increase institutional knowledge and spur change.</li>
+								</ul>
+							</div>
+							<div id="descConB" class="content hid" >
+								<ul style="text-align: justify;">
+									<li>Individual coaching for organizational leaders to support centering antiracism thinking and action.	</li>
+									<li>Organizational assessments to help understand where structural inequities exist and provide  strategies to improve diversity, equity and belonging within the institution.</li>
+									<li>Intensive facilitated small group discussions to raise self-awareness of race, the impact of race in our society and communities including in organizations and institutions, increase feelings of belonging and develop racial stamina in order to be antiracist.</li>
+									<li>Facilitation coaching to scale the antiracist work to your organization.</li>
+									<li>Tailored and targeted workshops to increase institutional knowledge and spur change.</li>
+								</ul>
+							</div>
+							<div id="descConC" class="content hid" >
+								<ul style="text-align: justify;">
+									<li>Individual coaching for organizational leaders to support centering antiracism thinking and action.	</li>
+									<li>Organizational assessments to help understand where structural inequities exist and provide  strategies to improve diversity, equity and belonging within the institution.</li>
+									<li>Intensive facilitated small group discussions to raise self-awareness of race, the impact of race in our society and communities including in organizations and institutions, increase feelings of belonging and develop racial stamina in order to be antiracist.</li>
+									<li>Facilitation coaching to scale the antiracist work to your organization.</li>
+									<li>Tailored and targeted workshops to increase institutional knowledge and spur change.</li>
+								</ul>
+							</div>
+							<div id="descConD" class="content hid" >
 								<ul style="text-align: justify;">
 									<li>Individual coaching for organizational leaders to support centering antiracism thinking and action.	</li>
 									<li>Organizational assessments to help understand where structural inequities exist and provide  strategies to improve diversity, equity and belonging within the institution.</li>
@@ -62,6 +112,65 @@
 				</div>
 			</div>
 
+
+			<script>
+				function descripA(){
+					var imgDes = document.getElementById('descripImage');
+					var desA = document.getElementById('descContent');
+					var desB = document.getElementById('descConB');
+					var desC = document.getElementById('descConC');
+					var desD = document.getElementById('descConD');
+
+					imgDes.src='./images/d_conference.png';
+					desA.style.display = 'block';
+					desB.style.display = 'none';
+					desC.style.display = 'none';
+					desD.style.display = 'none';
+				}
+				function descripB(){
+					var imgDes = document.getElementById('descripImage');
+					var desA = document.getElementById('descContent');
+					var desB = document.getElementById('descConB');
+					var desC = document.getElementById('descConC');
+					var desD = document.getElementById('descConD');
+
+					imgDes.src='./images/d_together_2.png';
+					desA.style.display = 'none';
+					desB.style.display = 'block';
+					desC.style.display = 'none';
+					desD.style.display = 'none';
+				}
+
+				function descripC(){
+					var imgDes = document.getElementById('descripImage');
+					var desA = document.getElementById('descContent');
+					var desB = document.getElementById('descConB');
+					var desC = document.getElementById('descConC');
+					var desD = document.getElementById('descConD');
+
+					imgDes.src='./images/d_together.png';
+					desA.style.display = 'none';
+					desB.style.display = 'none';
+					desC.style.display = 'block';
+					desD.style.display = 'none';
+				}
+
+				function descripD(){
+					var imgDes = document.getElementById('descripImage');
+					var desA = document.getElementById('descContent');
+					var desB = document.getElementById('descConB');
+					var desC = document.getElementById('descConC');
+					var desD = document.getElementById('descConD');
+
+					imgDes.src='./images/together_up2.png';
+					desA.style.display = 'none';
+					desB.style.display = 'none';
+					desC.style.display = 'none';
+					desD.style.display = 'block';
+				}			
+
+
+			</script>
 
 		<!-- Footer -->
 			<section id="footer">
