@@ -4044,10 +4044,9 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				background-size: cover;
-				height: 82vh;
+				height: auto;
 				min-height: 38rem;
-			}auto
+			}
 
 				#banner > .inner {
 					padding: 0 1.5rem;
