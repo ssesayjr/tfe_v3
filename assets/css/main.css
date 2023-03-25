@@ -3706,33 +3706,45 @@ input, select, textarea {
 		visibility: visible;
 	}
 
+/* SVG*/
+
 /* Banner */
 
-	#banner {
-		background-color: #353535;
-		color: rgba(255, 255, 255, 0.5);
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
-		justify-content: center;
-		background-attachment: fixed;
-		background-image: url("/images/T4E_banner_v2.svg");
-		background-position: bottom left;
-		background-size: cover;
-		cursor: default;
-		height: 90vh;
-		min-height: 40rem;
-		position: relative;
-		text-align: center;
-		width: 100%;
+#banner {
+	background-color: #353535;
+	color: rgba(255, 255, 255, 0.5);
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	background-attachment: fixed;
+	background-position: bottom left;
+	background-size: cover;
+	cursor: default;
+	height: 90vh;
+	min-height: 40rem;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	width: 100%;
+	z-index: 1;
+}
+
+
+#banner > .svg{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: -1;
+	clear: both;
 	}
 
 		#banner input, #banner select, #banner textarea {
@@ -3930,6 +3942,7 @@ input, select, textarea {
 			border-color: rgba(255, 255, 255, 0.15);
 		}
 
+
 		#banner > .inner {
 			-moz-transition: -moz-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
 			-webkit-transition: -webkit-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
@@ -3996,7 +4009,9 @@ input, select, textarea {
 			-ms-transform: translateY(0.75em);
 			transform: translateY(0.75em);
 			opacity: 0;
+
 		}
+
 
 		body.is-preload #banner:before {
 			opacity: 1;
