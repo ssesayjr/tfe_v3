@@ -10,13 +10,17 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" href="./images/butterfly.png">
 
-
 	</head>
 	<body class="is-preload">
+		<!-- partial:index.partial.html -->
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Header -->
 			<header id="header">
-				<a class="logo" href="./index.html">Transform <span>For Equity</span> <img src="./images/butterfly.png" style="vertical-align: text-bottom; float: left;" height="35px"/></a>
+				<a class="logo" href="./index.html">Transform <span>For Equity</span> <img src="./images/butterfly.png" style="vertical-align: text-bottom; float: left;" height="30px"/></a>
 				<nav>
 					<a href="#menu">Menu</a>
 				</nav>
@@ -39,10 +43,12 @@
 
 		<!-- Banner -->
 			<div id="banner" >
-						<object class="svg" data="./images/T4E_banner_v2.svg"></object>
-
+				<div class="svg">
+						 <object  data="./images/T4E_banner_v2.svg"></object> 
+				</div>
 						<div class="inner">
-							<span class="icon fa-gem"></span>
+							<!-- <span class="icon fa-gem"></span> -->
+							
 							<h1>Transform For Equity</h1>
 							<p>An Antiracist Repair Group</p>
 							<ul class="actions stacked">
@@ -145,38 +151,61 @@
 					<header class="heading major">
 						<h2>Our Partners</h2>
 						<p>Amet ligula vulputate consequat sit amet nullam</p>
-					</header>
-					<div class="profiles">
-						<div class="profile">
-							<div class="image">
-								<img src="images/client_logo/Truah.png" alt="" />
-							</div>
-							<header class="heading">
-								<h3>Amanda Doe</h3>
-							</header>
-							<p><i>"Praesent dapibus neque id ligula sed nisl sit met nullam consequat lorem sapien phasellus. Lorem ipsum dolor sit amet et consequat."</i></p>
-						</div>
-						<div class="profile">
-							<div class="image">
-								<img src="images/client_logo/MilwaukeeJCC.png" alt="" />
-							</div>
-							<header class="heading">
-								<h3>John Smith</h3>
-							</header>
-							<p><i>"Praesent dapibus neque id ligula sed nisl sit met nullam consequat lorem sapien phasellus. Lorem ipsum dolor sit amet et consequat."</i></p>
-						</div>
-						<div class="profile">
-							<div class="image">
-								<img src="images/client_logo/sixth.png" alt="" />
-							</div>
-							<header class="heading">
-								<h3>Kate Anderson</h3>
-							</header>
-							<p><i>"Praesent dapibus neque id ligula sed nisl sit met nullam consequat lorem sapien phasellus. Lorem ipsum dolor sit amet et consequat."</i></p>
-						</div>
-				</div>
-			</section>
+					</header> 
+						 <section class="customer-logos slider">
+							<div class="slide"><img src="./images/client_logo/revised/aic.png"></div>
+							<div class="slide"><img src="./images/client_logo/revised/milwaukeej.png"></div>
+							<div class="slide"><img src="./images/client_logo/revised/ncojw.png"></div>
+							<div class="slide"><img src="./images/client_logo/revised/nps.png"></div>
+							<div class="slide"><img src="./images/client_logo/revised/recon_juda.png"></div>
+							<div class="slide"><img src="./images/client_logo/revised/shalomHartman.png"></div>
+							<div class="slide"><img src="./images/client_logo/revised/Sixth&i_2.png"></div>
+							<div class="slide"><img src="./images/client_logo/revised/swt.png"></div>
+							<div class="slide"><img src="./images/client_logo/revised/truah_2.png"></div>
+							<div class="slide"><img src="./images/client_logo/revised/uniformReform.png"></div>
+						 </section>
+					  </div>
+				 </div>
+			</section> 
 
+
+<!-- Original Partners ee --
+<section id="three" class="wrapper">
+	<div class="inner">
+		<header class="heading major">
+			<h2>Our Partners</h2>
+			<p>Amet ligula vulputate consequat sit amet nullam</p>
+		</header>
+		<div class="profiles">
+			<div class="profile">
+				<div class="image">
+					<img src="images/client_logo/Truah.png" alt="" />
+				</div>
+				<header class="heading">
+					<h3>Amanda Doe</h3>
+				</header>
+				<p><i>"Praesent dapibus neque id ligula sed nisl sit met nullam consequat lorem sapien phasellus. Lorem ipsum dolor sit amet et consequat."</i></p>
+			</div>
+			<div class="profile">
+				<div class="image">
+					<img src="images/client_logo/MilwaukeeJCC.png" alt="" />
+				</div>
+				<header class="heading">
+					<h3>John Smith</h3>
+				</header>
+				<p><i>"Praesent dapibus neque id ligula sed nisl sit met nullam consequat lorem sapien phasellus. Lorem ipsum dolor sit amet et consequat."</i></p>
+			</div>
+			<div class="profile">
+				<div class="image">
+					<img src="images/client_logo/sixth.png" alt="" />
+				</div>
+				<header class="heading">
+					<h3>Kate Anderson</h3>
+				</header>
+				<p><i>"Praesent dapibus neque id ligula sed nisl sit met nullam consequat lorem sapien phasellus. Lorem ipsum dolor sit amet et consequat."</i></p>
+			</div>
+	</div>
+</section> -->
 		<!-- Contact -->
 			<section id= "contact" class="wrapper style2">
 				<div class="inner narrow">
@@ -224,11 +253,13 @@
 			</section>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/script.js"></script>
+
+
 
 	</body>
 </html>

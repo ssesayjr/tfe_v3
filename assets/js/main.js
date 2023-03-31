@@ -9,6 +9,7 @@
 	var	$window		= $(window),
 		$header		= $('#header'),
 		$banner		= $('#banner'),
+		$slick		=$('.customer-logos'),
 		$body		= $('body');
 
 	/**
@@ -97,6 +98,30 @@
 				$body.removeClass('is-preload');
 			}, 100);
 		});
+
+	//slick 
+	$(document).ready(function(){
+		$('.customer-logos').slick({
+			slidesToShow: 6,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 1500,
+			arrows: false,
+			dots: false,
+			pauseOnHover: false,
+			responsive: [{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 4
+				}
+			}, {
+				breakpoint: 520,
+				settings: {
+					slidesToShow: 3
+				}
+			}]
+		});
+	});
 
 	// Banner.
 		if ($banner.length > 0)
