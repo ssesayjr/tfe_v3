@@ -3093,7 +3093,7 @@ input, select, textarea {
 /* wrapper */
 
 	.wrapper {
-		padding: 6rem 0 4rem 0 ;
+		padding: 2rem 0 3rem 0 ;
 	}
 
 		.wrapper.style1 {
@@ -3960,12 +3960,12 @@ input, select, textarea {
 			}
 
 			#banner > .inner h1 {
-				font-size: 3.5rem;
+				font-size: 4.9rem;
 			}
 
 			#banner > .inner p {
 				color: #ffffff;
-				font-size: 1.5rem;
+				font-size: 3rem;
 				margin: 0 0 3.5rem 0;
 			}
 
@@ -4124,8 +4124,8 @@ input, select, textarea {
 
 	#footer {
 		padding: 6rem 0 4rem 0 ;
-		background: #353535;
-		color: rgba(255, 255, 255, 0.5);
+		background: #ffffff;
+		color: rgba(0, 0, 0, 0.5);
 		cursor: default;
 		text-align: center;
 	}
@@ -4166,11 +4166,13 @@ input, select, textarea {
 /* Contact Slider */
 
 .slick-slide {
-    margin: 0px 20px;
+    margin: 0px 10px;
+
 }
 
 .slick-slide img {
-    width: 100%;
+    width: 90%;
+
 }
 
 .slick-slider
@@ -4187,6 +4189,7 @@ input, select, textarea {
     -ms-touch-action: pan-y;
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
+	
 }
 
 .slick-list
@@ -4196,6 +4199,7 @@ input, select, textarea {
     overflow: hidden;
     margin: 0;
     padding: 0;
+	
 }
 .slick-list:focus
 {
@@ -4229,6 +4233,7 @@ input, select, textarea {
 {
     display: table;
     content: '';
+	clear: both;
 }
 .slick-track:after
 {
@@ -4265,6 +4270,7 @@ input, select, textarea {
 .slick-initialized .slick-slide
 {
     display: block;
+	width: auto;
 }
 .slick-loading .slick-slide
 {
