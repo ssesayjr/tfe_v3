@@ -2909,6 +2909,7 @@ input, select, textarea {
 				background: #ffffff;
 				border-radius: 0 0 4px 4px;
 				padding: 2rem;
+				opacity: 100%;
 			}
 
 				.spotlights .spotlight .content > :last-child {
@@ -3739,13 +3740,23 @@ input, select, textarea {
 
 
 #banner > .svg{
-	-moz-transition: -moz-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
-	-webkit-transition: -webkit-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
-	-ms-transition: -ms-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
-	transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
-	position: absolute;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	position: fixed;
 	width: 100%;
 	top: 0;
+	overflow: hidden;
+	z-index: -4;
 	}
 
 		#banner input, #banner select, #banner textarea {
@@ -3951,7 +3962,6 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
 			transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
 			position: relative;
-
 			width: 100%;
 		}
 
