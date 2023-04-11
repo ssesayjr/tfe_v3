@@ -3740,6 +3740,7 @@ input, select, textarea {
 
 
 #banner > .svg{
+
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -3755,7 +3756,6 @@ input, select, textarea {
 	position: fixed;
 	width: 100%;
 	top: 0;
-	overflow: hidden;
 	z-index: -4;
 	}
 
