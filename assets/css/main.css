@@ -3733,13 +3733,16 @@ input, select, textarea {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	z-index: 1;
 	text-align: left bottom;
 
 }
 
 
 #banner > .svg{
+	-moz-transition: -moz-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+	-webkit-transition: -webkit-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+	-ms-transition: -ms-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+	transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
 	position: absolute;
 	width: 100%;
 	top: 0;
@@ -3947,6 +3950,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
 			-ms-transition: -ms-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
 			transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+			position: relative;
 
 			width: 100%;
 		}
@@ -3981,6 +3985,25 @@ input, select, textarea {
 				position: relative;
 				width: 7rem;
 			}
+		
+		#banner:before {
+				-moz-transition: opacity 1s ease-in-out;
+				-webkit-transition: opacity 1s ease-in-out;
+				-ms-transition: opacity 1s ease-in-out;
+				transition: opacity 1s ease-in-out;
+				-moz-transition-delay: 0.75s;
+				-webkit-transition-delay: 0.75s;
+				-ms-transition-delay: 0.75s;
+				transition-delay: 0.75s;
+				background: #202020;
+				content: '';
+				display: block;
+				left: 0;
+				opacity: 0.25;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
 
 		#banner .svg:before {
 			-moz-transition: opacity 1s ease-in-out;
@@ -4010,6 +4033,15 @@ input, select, textarea {
 
 		}
 
+
+		body.is-preload #banner >  .svg > .inner {
+			-moz-transform: translateY(0.75em);
+			-webkit-transform: translateY(0.75em);
+			-ms-transform: translateY(0.75em);
+			transform: translateY(0.75em);
+			opacity: 0;
+
+		}
 
 		body.is-preload #banner:before {
 			opacity: 1;
