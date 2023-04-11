@@ -2909,6 +2909,7 @@ input, select, textarea {
 				background: #ffffff;
 				border-radius: 0 0 4px 4px;
 				padding: 2rem;
+				opacity: 100%;
 			}
 
 				.spotlights .spotlight .content > :last-child {
@@ -3733,16 +3734,29 @@ input, select, textarea {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	z-index: 1;
 	text-align: left bottom;
 
 }
 
 
 #banner > .svg{
-	position: absolute;
+
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	position: fixed;
 	width: 100%;
 	top: 0;
+	z-index: -4;
 	}
 
 		#banner input, #banner select, #banner textarea {
@@ -3948,7 +3962,6 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
 			transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
 			position: relative;
-
 			width: 100%;
 		}
 
@@ -3981,6 +3994,25 @@ input, select, textarea {
 				margin: 0 auto 3rem auto;
 				position: relative;
 				width: 7rem;
+			}
+		
+		#banner:before {
+				-moz-transition: opacity 1s ease-in-out;
+				-webkit-transition: opacity 1s ease-in-out;
+				-ms-transition: opacity 1s ease-in-out;
+				transition: opacity 1s ease-in-out;
+				-moz-transition-delay: 0.75s;
+				-webkit-transition-delay: 0.75s;
+				-ms-transition-delay: 0.75s;
+				transition-delay: 0.75s;
+				background: #202020;
+				content: '';
+				display: block;
+				left: 0;
+				opacity: 0.25;
+				position: absolute;
+				top: 0;
+				width: 100%;
 			}
 
 		#banner .svg:before {
