@@ -3755,6 +3755,7 @@ input, select, textarea {
 	justify-content: center;
 	position: fixed;
 	width: 100%;
+	height: auto;
 	top: 0;
 	z-index: -4;
 	}
