@@ -2978,6 +2978,61 @@ input, select, textarea {
 
 		}
 
+
+/* BuildBlocks*/
+
+.buildBlocks {
+    text-decoration: none;
+    padding-left: 6.5em;
+    position: relative;
+    text-align: left;
+}
+
+    .buildBlocks:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        text-transform: none !important;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 400;
+    }
+
+    .buildBlocks.solid:before {
+        font-weight: 900;
+    }
+
+    .buildBlocks.brands:before {
+        font-family: 'Font Awesome 5 Brands';
+    }
+
+    .buildBlocks:before {
+        border-radius: 0.5em;
+        border: solid 1px rgba(144, 144, 144, 0.25);
+        color: #6c88d5;
+        display: inline-block;
+        font-size: 2em;
+        height: 2em;
+        left: 0;
+        line-height: 2em;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 2em;
+    }
+
+    .buildBlocks h3 {
+        margin: 0 0 0.7em 0;
+    }
+
+
+
+
+
+		
 /* Profiles */
 
 	.profiles {
@@ -3639,6 +3694,38 @@ input, select, textarea {
 						border-top: 0;
 					}
 
+
+					
+					#menu > ul.links > li.submenu > ul
+					{
+					   margin: 0;
+					   list-style: none;
+					   padding:0;
+					   left:-180px;
+					   display: none;
+				   }
+		   
+		   
+				   #menu > ul.links > li.submenu:hover > ul {
+					   color: rgba(255, 255, 255, 0.75);
+					   display: block;
+				   }
+		   
+				   #menu > ul.links > li.submenu:hover > ul > li {
+					   color: rgba(255, 255, 255, 0.75);
+					   display: block;
+					   padding:0;
+					   margin-top:10px;
+				   }
+
+				   #menu > ul.links > li.submenu:hover > ul > li > a {
+					border: 0;
+					color: #5a1a4f;
+					display: block;
+					font-weight: 200;
+					line-height: 2.5rem;
+				}
+
 		#menu .close {
 			text-decoration: none;
 			-moz-transition: color 0.2s ease-in-out;
@@ -4033,6 +4120,7 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			width: 100%;
+			height: auto;
 		}
 
 		body.is-preload #banner > .inner {
@@ -4064,6 +4152,12 @@ input, select, textarea {
 				background-attachment: scroll;
 				height: 80vh;
 				min-height: 35rem;
+			}
+			#banner > .svg {
+				width: 980px;
+				height: auto;
+				top: 0;
+				left:0;
 			}
 
 				#banner > .inner {
@@ -4100,6 +4194,12 @@ input, select, textarea {
 			#banner {
 				height: auto;
 				min-height: 38rem;
+			}
+			#banner > .svg {
+				width: 736px;
+				height: auto;
+				top: 0;
+				left:0;
 			}
 
 				#banner > .inner {
