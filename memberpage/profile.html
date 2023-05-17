@@ -9,15 +9,17 @@
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="shortcut icon" href="../images/butterfly.png">
+		<link rel="stylesheet" href="../memberpage/css/profile.css" />
+
 
 	</head>
 	<body class="is-preload">
 	
 		<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+		
 		<!-- Header -->
 			<header id="header">
 				<a class="logo" href="../index.html">Transform <span>For Equity</span> <img src="../images/butterfly.png" style="vertical-align: text-bottom; float: left;" height="30px"/></a>
@@ -31,7 +33,6 @@
 			<ul class="links">
 				<li><a href="../memberpage/home.html">Home</a></li>
 				<li><a href="./resources.html">Resources</a></li>
-				<li><a href="./profile.html" style="font-weight: 300;"><i class="fas fa-user" style="color: white; padding-right: 1px;"></i>&nbsp;Profile</a></li>
 				<li><a href="../login/login.html" style="font-weight: 300;"><i class="fas fa-sign-out-alt" style="color: white; padding-right: 1px;"></i>&nbsp;Logout</a></li>
 
 			</ul>
@@ -45,7 +46,7 @@
 				</div>
 						<div class="inner">
 							<header class="heading major">
-								<h1>Members Page</h1>
+								<h1>Profile</h1>
 							</header>
 						</div>
 		
@@ -53,40 +54,76 @@
 		</section>
 		
 
-		<!-- One -->
-			<section id="two" class="wrapper" style="z-index: 100; background-color: rgba(255,255,255,1); padding-bottom: 0%;">
-				<div id="main" class="wrapper" style="padding: 2.5% 0% 5% 0%;">
-					<div class="inner">
-						<header class="heading major">
-							<h2>General Information</h2>
-						</header>
-
-						<div class="profile" style="overflow: auto;">
-							<div class="image"  style="float: center; padding-bottom: 1%;" >
-								<img src="../images/dsh_article.png" height="425px"/>
-							</div>
-
-						</div>
-
-						<p>
-							The Transfrom For Equity Member Portal is a self-service portal that offers online member services to Transform For Equity (TRF) members who are interested in the different facets of diversity, equity, inclusion, and learning. The portal provides access to a variety of resources and course trainings.
-						</p>
-
-						<p>
-							The Transform For Equity Member Portal is a valuable resource for members who are committed to creating a more diverse, equitable, and inclusive world. By providing access to a variety of resources, the portal helps members to learn more about DEI, connect with others who share their values, and take action to make a difference.
-						</p>
-
-						<p> Click on the resources link to access our course material.						</p>
 
 
-							<div >
-								<ul class="actions stacked">
-									<li style="margin-left: auto;margin-right: auto;"><a href="./resources.html" class="button large primary">Course Material</a></li>
-								</ul>
-							</div>
-						</div>
+
+		<!-- Profile Body -->
+		<section style="background-color: white;transform: (0,95%); clear: both;">
+		<div class="container">
+			<div class="row justify-content-center">
+			  <div class="col-6 uxa-form-group mt-5">
+		  
+				<h1 class="text-center mt-5 mb-2">First Name, Last Name</h1>
+				<!-- single sentence description -->
+				<p class="lead text-center">{{email-address}}</p>
+				<!-- /single sentence description -->
+		  
+				<div class="uxa-user-avatar">
+				  <img src="../images/profile_pic.jpg" alt="User avatar">
 				</div>
-			</section>
+				
+				
+				<form class="mt-5 mb-5">
+		  
+				  <div class="form-group">
+					<label for="exampleInputEmail1">Your Email Address<span>*</span></label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					<small id="emailHelp" class="form-text text-muted">We'll never share or spam your email address.</small>
+				  </div>
+		  
+				  <div class="form-group">
+					<label for="exampleInputName">First Name</label>
+					<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your First Name">
+				  </div>
+		  
+				  <div class="form-group">
+					<label for="exampleInputName">Last Name</label>
+					<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your First Name">
+				  </div>
+				  
+
+				  <div class="form-group" style="padding-left: 2.5%; padding-right: 2.5%;">
+					<label for="exampleInputName">Old Password</label>
+					<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter original password">
+				  </div>
+
+				  <div class="form-group" style="padding-left: 2.5%; padding-right: 2.5%;">
+					<label for="exampleInputName">New Password</label>
+					<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter new password">
+				  </div>
+
+
+				</form>
+						  
+			  </div>
+			</div>
+		  </div>
+		</section>
+		
+		<!-- One -->
+		<section id="two" class="wrapper" style="z-index: 100; background-color: rgba(255,255,255,1); padding-bottom: 0%;">
+			<div id="main" class="wrapper" style="padding: 2.5% 0% 5% 0%;">
+				<div class="inner">
+
+
+						<div >
+							<ul class="actions stacked">
+								<li style="margin-left: auto;margin-right: auto;"><a href="#" onclick="return false" class="button large primary"><i class="fa fa-save mr-2"></i> Update Account Details</a></li>
+							</ul>
+						</div>
+					</div>
+			</div>
+		</section>
 
 		<!-- BWB Banner Message -->
 		<section id ="build" style="z-index: 100; background-color: rgba(255,255,255,1);">
@@ -116,6 +153,7 @@
 				</div>
 			</div>
 		</section>	
+
 
 		<!-- Footer -->
 		<section id="footer">

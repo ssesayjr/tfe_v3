@@ -82,17 +82,28 @@
       z-index: 2;
       max-width: 55%;
   }
+    blockquote h1 {
+      font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      padding-left: 5%;
+      font-style: normal;
+      color:white;
+  }
+
   blockquote p {
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 1.5rem;
       margin-bottom: 1rem;
       padding-left: 5%;
       color:white;
   }
   blockquote span {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       color:white;
+      font-weight: bold;
       padding-left: 5%;
   }
   /* current slide
@@ -185,3 +196,116 @@
       -webkit-transition: width .6s, height .6s;
       transition: width .6s, height .6s;
   }
+
+
+  	@media screen and (max-width: 980px) {
+
+          .content-quote {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 5%;
+      background-position: 50% 100%;
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      mix-blend-mode: lighten;
+      opacity: 0;
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      -webkit-transition: opacity .4s .6s, -webkit-transform .4s .6s;
+      transition: opacity .4s .6s, -webkit-transform .4s .6s;
+      transition: opacity .4s .6s, transform .4s .6s;
+      transition: opacity .4s .6s, transform .4s .6s, -webkit-transform .4s .6s;
+  }
+  .content-quote blockquote {
+      position: absolute;
+      top: 25%;
+      right: 25%;
+      z-index: 2;
+      max-width: 55%;
+  }
+  blockquote h1 {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 5%;
+    font-style: normal;
+    color:white;
+}
+
+blockquote p {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 5%;
+    color:white;
+}
+blockquote span {
+    font-size: 1.2rem;
+    color:white;
+    font-weight: bold;
+    padding-left: 5%;
+}
+
+}
+
+	
+    @media screen and (max-width: 736px) {
+
+  .content-quote {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 5%;
+      background-position: 50% 100%;
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      mix-blend-mode: lighten;
+      opacity: 0;
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      -webkit-transition: opacity .4s .6s, -webkit-transform .4s .6s;
+      transition: opacity .4s .6s, -webkit-transform .4s .6s;
+      transition: opacity .4s .6s, transform .4s .6s;
+      transition: opacity .4s .6s, transform .4s .6s, -webkit-transform .4s .6s;
+  }
+  .content-quote blockquote {
+      position: absolute;
+      top: 25%;
+      right: 25%;
+      z-index: 2;
+      max-width: 55%;
+  }
+
+  blockquote h1 {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 5%;
+    font-style: normal;
+    color:white;
+}
+
+blockquote p {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 5%;
+    color:white;
+}
+blockquote span {
+    font-size: 1.2rem;
+    color:white;
+    font-weight: bold;
+    padding-left: 5%;
+}
+    
+}
