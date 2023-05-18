@@ -107,11 +107,13 @@ input, select, textarea {
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
 			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
+			-moz-transition: opacity 0.5s ease;
+			-webkit-transition: opacity 0.5s ease;
+			-ms-transition: opacity 0.5s ease;
+			transition: opacity 0.5s ease;
 		}
+
+
 
 /* Typography */
 
@@ -335,10 +337,12 @@ input, select, textarea {
 	header.major {
 		margin: 0 auto 4rem auto;
 		max-width: 80%;
+
 	}
 
 		header.major h1 {
 			font-size: 3rem;
+
 		}
 
 	header h2 {
@@ -2240,7 +2244,7 @@ input, select, textarea {
 				border: solid 1px;
 				content: '';
 				display: inline-block;
-				fint-size: 0.8rem;
+				font-size: 0.8rem;
 				height: 1.95rem;
 				left: 0;
 				line-height: 1.95rem;
@@ -2907,6 +2911,7 @@ input, select, textarea {
 				background: #ffffff;
 				border-radius: 0 0 4px 4px;
 				padding: 2rem;
+				opacity: 100%;
 			}
 
 				.spotlights .spotlight .content > :last-child {
@@ -2975,6 +2980,61 @@ input, select, textarea {
 
 		}
 
+
+/* BuildBlocks*/
+
+.buildBlocks {
+    text-decoration: none;
+    padding-left: 6.5em;
+    position: relative;
+    text-align: left;
+}
+
+    .buildBlocks:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        text-transform: none !important;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 400;
+    }
+
+    .buildBlocks.solid:before {
+        font-weight: 900;
+    }
+
+    .buildBlocks.brands:before {
+        font-family: 'Font Awesome 5 Brands';
+    }
+
+    .buildBlocks:before {
+        border-radius: 0.5em;
+        border: solid 1px rgba(144, 144, 144, 0.25);
+        color: #6c88d5;
+        display: inline-block;
+        font-size: 2em;
+        height: 2em;
+        left: 0;
+        line-height: 2em;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 2em;
+    }
+
+    .buildBlocks h3 {
+        margin: 0 0 0.7em 0;
+    }
+
+
+
+
+
+		
 /* Profiles */
 
 	.profiles {
@@ -3018,14 +3078,21 @@ input, select, textarea {
 			}
 
 			.profiles .profile .image {
-				border-radius: 100%;
+				width: 180px;
+				height: 180px;
+				justify-content: center;
+				align-items: center;
 				border: 1px solid #4468ca;
-				padding: 0.75rem;
-				margin-bottom: 2rem;
+				padding: 1rem;
+				margin-bottom: auto;
 			}
 
 				.profiles .profile .image img {
-					border-radius: 100%;
+					width: 90%;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%,-50%);
 				}
 
 		@media screen and (min-width: 1281px) {
@@ -3084,7 +3151,7 @@ input, select, textarea {
 /* wrapper */
 
 	.wrapper {
-		padding: 6rem 0 4rem 0 ;
+		padding: 2rem 0 3rem 0 ;
 	}
 
 		.wrapper.style1 {
@@ -3394,10 +3461,12 @@ input, select, textarea {
 
 		#header > .logo {
 			color: #ffffff;
+			display: inline-block;
 			font-family: "Fjalla One", sans-serif;
 			font-weight: 400;
 			letter-spacing: 0.1rem;
-			padding: 0 1.25rem;
+			padding: 0 0.75rem;
+			position: relative;
 			text-decoration: none;
 			text-transform: uppercase;
 			margin-top: 0.125rem;
@@ -3627,6 +3696,38 @@ input, select, textarea {
 						border-top: 0;
 					}
 
+
+					
+					#menu > ul.links > li.submenu > ul
+					{
+					   margin: 0;
+					   list-style: none;
+					   padding:0;
+					   left:-180px;
+					   display: none;
+				   }
+		   
+		   
+				   #menu > ul.links > li.submenu:hover > ul {
+					   color: rgba(255, 255, 255, 0.75);
+					   display: block;
+				   }
+		   
+				   #menu > ul.links > li.submenu:hover > ul > li {
+					   color: rgba(255, 255, 255, 0.75);
+					   display: block;
+					   padding:0;
+					   margin-top:10px;
+				   }
+
+				   #menu > ul.links > li.submenu:hover > ul > li > a {
+					border: 0;
+					color: #5a1a4f;
+					display: block;
+					font-weight: 200;
+					line-height: 2.5rem;
+				}
+
 		#menu .close {
 			text-decoration: none;
 			-moz-transition: color 0.2s ease-in-out;
@@ -3697,33 +3798,100 @@ input, select, textarea {
 		visibility: visible;
 	}
 
+/* SVG*/
+
 /* Banner */
 
-	#banner {
-		background-color: #353535;
-		color: rgba(255, 255, 255, 0.5);
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
-		justify-content: center;
-		background-attachment: fixed;
-		background-image: url("../../images/banner.jpg");
-		background-position: bottom left;
-		background-size: cover;
-		cursor: default;
-		height: 90vh;
-		min-height: 40rem;
-		position: relative;
-		text-align: center;
-		width: 100%;
+#banner {
+	color: rgba(255, 255, 255, 0.5);
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	background-attachment: fixed;
+	background-size: cover;
+	cursor: default;
+	min-height: 60rem;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	text-align: left bottom;
+
+}
+#bannerMini {
+	color: rgba(255, 255, 255, 1);
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	background-attachment: fixed;
+	background-size: cover;
+	cursor: default;
+	min-height: 30rem;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	text-align: left bottom;
+
+}
+#bannerMini > .svgMini{
+
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	top: 0;
+	z-index: -4;
+	}
+
+
+
+#banner > .svg{
+
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	top: 0;
+	z-index: -4;
 	}
 
 		#banner input, #banner select, #banner textarea {
@@ -3748,7 +3916,7 @@ input, select, textarea {
 		}
 
 		#banner hr {
-			border-bottom-color: rgba(255, 255, 255, 0.15);
+			border-bottom-color: rgba(255, 255, 255, 1);
 		}
 
 		#banner .box {
@@ -3838,9 +4006,7 @@ input, select, textarea {
 				box-shadow: 0 0 0 1px #4468ca;
 			}
 
-		#banner select {
-			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.15)' /%3E%3C/svg%3E");
-		}
+		
 
 			#banner select option {
 				color: rgba(255, 255, 255, 0.5);
@@ -3891,6 +4057,11 @@ input, select, textarea {
 			border-color: rgba(255, 255, 255, 0.15);
 		}
 
+		#bannerMini header.heading {
+			border-color: rgba(255, 255, 255, 1);
+		}
+
+
 		#banner header p {
 			color: #4468ca;
 		}
@@ -3923,6 +4094,8 @@ input, select, textarea {
 			border-color: rgba(255, 255, 255, 0.15);
 		}
 
+
+		
 		#banner > .inner {
 			-moz-transition: -moz-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
 			-webkit-transition: -webkit-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
@@ -3930,6 +4103,16 @@ input, select, textarea {
 			transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
 			position: relative;
 			width: 100%;
+			z-index: 1;
+		}
+
+		#bannerMini > .inner {
+			-moz-transition: -moz-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+			-webkit-transition: -webkit-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+			-ms-transition: -ms-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+			position: relative;
+			width: 100%;
+			z-index: 1;
 		}
 
 			#banner > .inner > :last-child {
@@ -3938,23 +4121,35 @@ input, select, textarea {
 
 			#banner > .inner h1, #banner > .inner p, #banner > .inner ul {
 				position: relative;
+				z-index: 1;
 			}
 
 			#banner > .inner h1 {
-				font-size: 3.5rem;
+				font-size: 4.9rem;
+				z-index: 1;
+				color: #ffffff;
+				opacity: 1;
+			}
+
+			#bannerMini > .inner h1 {
+				font-size: 4.9rem;
+				z-index: 100;
+				color: #ffffff;
+				opacity: 1;
 			}
 
 			#banner > .inner p {
 				color: #ffffff;
-				font-size: 1.5rem;
-				margin: 0 0 3rem 0;
+				font-size: 3rem;
+				margin: 0 0 3.5rem 0;
+				z-index: 1;
 			}
 
 			#banner > .inner .icon {
 				border-radius: 100%;
 				border: 1px solid #ffffff;
 				color: #ffffff;
-				display: block;
+				content: url("../../images/butterfly.png");
 				font-size: 3.5rem;
 				height: 7rem;
 				line-height: 7rem;
@@ -3962,8 +4157,46 @@ input, select, textarea {
 				position: relative;
 				width: 7rem;
 			}
-
+		
 		#banner:before {
+				-moz-transition: opacity 1s ease-in-out;
+				-webkit-transition: opacity 1s ease-in-out;
+				-ms-transition: opacity 1s ease-in-out;
+				transition: opacity 1s ease-in-out;
+				-moz-transition-delay: 0.75s;
+				-webkit-transition-delay: 0.75s;
+				-ms-transition-delay: 0.75s;
+				transition-delay: 0.75s;
+				background: #202020;
+				content: '';
+				display: block;
+				left: 0;
+				opacity: 0.25;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+
+			#bannerMini:before {
+				-moz-transition: opacity 1s ease-in-out;
+				-webkit-transition: opacity 1s ease-in-out;
+				-ms-transition: opacity 1s ease-in-out;
+				transition: opacity 1s ease-in-out;
+				-moz-transition-delay: 0.75s;
+				-webkit-transition-delay: 0.75s;
+				-ms-transition-delay: 0.75s;
+				transition-delay: 0.75s;
+				background: #202020;
+				content: '';
+				display: block;
+				left: 0;
+				opacity: 0.25;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+
+		#banner .svg:before {
 			-moz-transition: opacity 1s ease-in-out;
 			-webkit-transition: opacity 1s ease-in-out;
 			-ms-transition: opacity 1s ease-in-out;
@@ -3975,12 +4208,32 @@ input, select, textarea {
 			background: #202020;
 			content: '';
 			display: block;
-			height: 100%;
 			left: 0;
 			opacity: 0.25;
 			position: absolute;
 			top: 0;
 			width: 100%;
+			height: auto;
+		}
+
+		#bannerMini .svgMini:before {
+			-moz-transition: opacity 1s ease-in-out;
+			-webkit-transition: opacity 1s ease-in-out;
+			-ms-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+			-moz-transition-delay: 0.75s;
+			-webkit-transition-delay: 0.75s;
+			-ms-transition-delay: 0.75s;
+			transition-delay: 0.75s;
+			background: #202020;
+			content: '';
+			display: block;
+			left: 0;
+			opacity: 0.25;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: auto;
 		}
 
 		body.is-preload #banner > .inner {
@@ -3988,7 +4241,35 @@ input, select, textarea {
 			-webkit-transform: translateY(0.75em);
 			-ms-transform: translateY(0.75em);
 			transform: translateY(0.75em);
+			opacity: 1;
+			z-index: 1;
+
+		}
+
+
+		body.is-preload #banner >  .svg > .inner {
+			-moz-transform: translateY(0.75em);
+			-webkit-transform: translateY(0.75em);
+			-ms-transform: translateY(0.75em);
+			transform: translateY(0.75em);
 			opacity: 0;
+
+		}
+
+		body.is-preload #bannerMini >  .svgMini > .inner {
+			-moz-transform: translateY(0.75em);
+			-webkit-transform: translateY(0.75em);
+			-ms-transform: translateY(0.75em);
+			transform: translateY(0.75em);
+			opacity: 0;
+
+		}
+
+
+		body.is-preload #bannerMini > .inner >h1{
+			z-index: -1000;
+			opacity: 1;
+
 		}
 
 		body.is-preload #banner:before {
@@ -4001,6 +4282,25 @@ input, select, textarea {
 				background-attachment: scroll;
 				height: 80vh;
 				min-height: 35rem;
+			}
+			#bannerMini {
+				background-attachment: scroll;
+				height: 30vh;
+				min-height: 35rem;
+			}
+
+			#banner > .svg {
+				width: 980px;
+				height: auto;
+				top: 0;
+				left:0;
+			}
+
+			#bannerMini > .svgMini {
+				width: 980px;
+				height: auto;
+				top: 0;
+				left:0;
 			}
 
 				#banner > .inner {
@@ -4022,11 +4322,11 @@ input, select, textarea {
 						color: #ffffff;
 						display: block;
 						font-size: 3rem;
-						height: 6rem;
+						height: 8rem;
 						line-height: 6rem;
 						margin: 0 auto 3rem auto;
 						position: relative;
-						width: 6rem;
+						width: 8rem;
 						z-index: 10001;
 					}
 
@@ -4038,6 +4338,26 @@ input, select, textarea {
 				height: auto;
 				min-height: 38rem;
 			}
+
+			#bannerMini {
+				height: auto;
+				min-height: 38rem;
+			}
+
+			#banner > .svg {
+				width: 736px;
+				height: auto;
+				top: 0;
+				left:0;
+			}
+
+			#banner > .svgMini {
+				width: 736px;
+				height: auto;
+				top: 0;
+				left:0;
+			}			
+
 
 				#banner > .inner {
 					padding: 0 1.5rem;
@@ -4068,6 +4388,15 @@ input, select, textarea {
 		padding: 8rem 0 6rem 0 ;
 	}
 
+	#main .show {
+		display: contents;
+
+	}
+
+	#main .hid {
+		display: none;
+
+	}
 		@media screen and (max-width: 1280px) {
 
 			#main {
@@ -4088,12 +4417,15 @@ input, select, textarea {
 
 		}
 
+
+
+
 /* Footer */
 
 	#footer {
 		padding: 6rem 0 4rem 0 ;
-		background: #353535;
-		color: rgba(255, 255, 255, 0.5);
+		background: #ffffff;
+		color: rgba(0, 0, 0, 0.5);
 		cursor: default;
 		text-align: center;
 	}
@@ -4129,3 +4461,127 @@ input, select, textarea {
 			}
 
 		}
+
+
+/* Contact Slider */
+
+.slick-slide {
+    margin: 0px 10px;
+
+}
+
+.slick-slide img {
+    width: 90%;
+
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+	
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+	
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+	clear: both;
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+	width: auto;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
