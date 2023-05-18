@@ -7,8 +7,8 @@
 	<!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700" rel="stylesheet"> -->
     <!-- Icon Font -->
     <link rel="stylesheet" href="fonts/ionicons/css/ionicons.css">
 	<!-- Text Font -->
@@ -26,25 +26,30 @@
 	<!-- Header start -->
 		<!-- Header -->
 		<header id="header">
-			<a class="logo" href="index.html">   Transform <span>For Equity</span> <img src="../images/butterfly.png" style="vertical-align: top; float: left;" height="35px"/></a>
+			<a class="logo" href="../index.html">   Transform <span>For Equity</span> <img src="../images/butterfly.png" style="vertical-align: top; float: left;" height="30px"/></a>
 			<nav>
 				<a href="#logBan">Menu</a>
 			</nav>
 		</header>
 
 	<!-- Nav -->
-		<nav id="logBan">
-			<ul class="links">
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../about.html">About</a></li>
-				<li><a href="../believe.html">We Believe</a></li>
-				<li><a href="../partner.html">How We Partner</a></li>
-				<li><a href="../build.html">What We Build</a></li>
-				<li><a href="../index.html#contact">Contact Us</a></li>
-				<li><a href="../social.html">Social Media</a></li>
-					<!-- Add submenu CSS for Social Media-->
-			</ul>
-		</nav>
+	<nav id="logBan">
+		<ul class="links">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../about.html">About</a></li>
+			<li><a href="../contactus.html">Contact Us</a></li>
+			<li><a href="../partners.html">Services</a></li>
+			<li><a href="../portfolio.html">Portfolio</a></li>
+			<li class="submenu"><a href="#">Social Media</a>
+				<ul>
+					<li><a href="portfolio.html"><i class="fas fa-newspaper" style="color: white; padding-right: 1px;"></i>&nbsp;Blogs</a></li>
+					<li><a href="http://www.linkedin.com/in/deitra-reiser-1aa71117"><i class="fab fa-linkedin" style="color: white; padding-right: 1px;"></i> LinkedIn</a></li>
+					<li><a href="https://www.instagram.com/transformforequity/"><i class="fab fa-instagram" style="color: white; padding-right: 1px;"></i>&nbsp;Instagram</a></li>
+					<li><a href="#"><i class="fab fa-facebook" style="color: white; padding-right: 1px;"></i>&nbsp;Facebook</a></li>
+				</ul>
+		</li>
+		</ul>
+	</nav>
 	<!-- Header end -->
 	<main class="cd-main">
 		<section class="cd-section index4 visible">
@@ -171,7 +176,7 @@
 	<script>
 		function psswrd(){
 
-			if(document.getElementById('usnme').value =='admin'){
+			if(document.getElementById('usnme').value =='dreiser@transformforequity.com'){
 				if (document.getElementById('psswd').value =='password'){
 				setTimeout(function(){ window.location.assign("../memberpage/home.html")});
 				}else{

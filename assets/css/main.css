@@ -4107,7 +4107,9 @@ input, select, textarea {
 		}
 
 		#bannerMini > .inner {
-
+			-moz-transition: -moz-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+			-webkit-transition: -webkit-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+			-ms-transition: -ms-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
 			position: relative;
 			width: 100%;
 			z-index: 1;
@@ -4157,6 +4159,25 @@ input, select, textarea {
 			}
 		
 		#banner:before {
+				-moz-transition: opacity 1s ease-in-out;
+				-webkit-transition: opacity 1s ease-in-out;
+				-ms-transition: opacity 1s ease-in-out;
+				transition: opacity 1s ease-in-out;
+				-moz-transition-delay: 0.75s;
+				-webkit-transition-delay: 0.75s;
+				-ms-transition-delay: 0.75s;
+				transition-delay: 0.75s;
+				background: #202020;
+				content: '';
+				display: block;
+				left: 0;
+				opacity: 0.25;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+
+			#bannerMini:before {
 				-moz-transition: opacity 1s ease-in-out;
 				-webkit-transition: opacity 1s ease-in-out;
 				-ms-transition: opacity 1s ease-in-out;
@@ -4235,6 +4256,16 @@ input, select, textarea {
 
 		}
 
+		body.is-preload #bannerMini >  .svgMini > .inner {
+			-moz-transform: translateY(0.75em);
+			-webkit-transform: translateY(0.75em);
+			-ms-transform: translateY(0.75em);
+			transform: translateY(0.75em);
+			opacity: 0;
+
+		}
+
+
 		body.is-preload #bannerMini > .inner >h1{
 			z-index: -1000;
 			opacity: 1;
@@ -4252,6 +4283,12 @@ input, select, textarea {
 				height: 80vh;
 				min-height: 35rem;
 			}
+			#bannerMini {
+				background-attachment: scroll;
+				height: 30vh;
+				min-height: 35rem;
+			}
+
 			#banner > .svg {
 				width: 980px;
 				height: auto;
@@ -4301,12 +4338,26 @@ input, select, textarea {
 				height: auto;
 				min-height: 38rem;
 			}
+
+			#bannerMini {
+				height: auto;
+				min-height: 38rem;
+			}
+
 			#banner > .svg {
 				width: 736px;
 				height: auto;
 				top: 0;
 				left:0;
 			}
+
+			#banner > .svgMini {
+				width: 736px;
+				height: auto;
+				top: 0;
+				left:0;
+			}			
+
 
 				#banner > .inner {
 					padding: 0 1.5rem;

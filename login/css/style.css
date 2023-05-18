@@ -106,7 +106,7 @@ body {
 	margin: 0;
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
-	font-family: 'gidoleregular';
+	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 	font-weight: 400;
 	width: 100%;
 	min-height: 100%;
@@ -130,7 +130,7 @@ img {
 input, textarea, select {
 	outline: none;
 	resize: none;
-	font-family: 'gidoleregular';
+	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 }
 a, input, button {
 	outline: none !important;
@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
 	font-weight: bold;
-	font-family: 'BloggerSans';
+	font-family: "Fjalla One", sans-serif;
 }
 
 ul, ol {
@@ -519,7 +519,7 @@ hr {
 .login-with h3{
 	font-size: 24px;
 	font-weight: 400;
-	font-family: 'gidoleregular';
+	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 	margin-bottom: 15px;
 }
 .social-login-btn{}
@@ -591,7 +591,7 @@ hr {
 	top: 27%;
 	color: #3c4d6d;
 	font-size: 65px;
-	font-family: 'gidoleregular';
+	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 }
 .style1 .login-box h3.subtitle{
 	position: absolute;
@@ -1040,7 +1040,8 @@ hr {
 	07. Login Style 4
 ==============================================================*/
 .index4 .style4{
-	background: url(../images/banner1.jpg) no-repeat;
+	/* background: url(../images/banner1.jpg) no-repeat; */
+	background-color: white;
 	background-size: cover;
 	background-position: center center;
 }
@@ -1072,7 +1073,7 @@ hr {
 	line-height: 15px;
 	font-weight: 400;
 	display: inline-block;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 	border-bottom: 1px dashed #000;
 }
 .style4 .sign-up-txt{
@@ -1080,7 +1081,7 @@ hr {
 	font-size: 15px;
 	line-height: 15px;
 	font-weight: 400;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 }
 .style4 .sign-up-txt a{
 	color: #4468ca;
@@ -1088,7 +1089,7 @@ hr {
 	line-height: 15px;
 	font-weight: 400;
 	display: inline-block;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 	border-bottom: 1px dashed #000;
 }
 .style4 .style4-left{
@@ -1161,7 +1162,7 @@ hr {
 	color: #ffffff;
 	text-transform: uppercase;
 	font-size: 14px;
-	font-family: 'Nunito', sans-serif;
+	font-family: "Fjalla One", sans-serif;
 	letter-spacing: 0.050em;
 	border: 0;
 	cursor: pointer;
@@ -1830,7 +1831,7 @@ body {
 
 #logBan {
 	background-color: #353535;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 1);
 	-moz-transform: translateX(20rem);
 	-webkit-transform: translateX(20rem);
 	-ms-transform: translateX(20rem);
@@ -1958,12 +1959,43 @@ body {
 				}
 
 					#logBan > ul.links > li > a:hover {
-						color: rgba(255, 255, 255, 0.75);
+						color: rgba(255, 255, 255, 1);
 					}
 
 				#logBan > ul.links > li:first-child > a {
 					border-top: 0;
 				}
+
+									
+				#logBan > ul.links > li.submenu > ul
+				{
+				   margin: 0;
+				   list-style: none;
+				   padding:0;
+				   left:-180px;
+				   display: none;
+			   }
+	   
+	   
+			   #logBan > ul.links > li.submenu:hover > ul {
+				   color: rgba(255, 255, 255, 0.75);
+				   display: block;
+			   }
+	   
+			   #logBan > ul.links > li.submenu:hover > ul > li {
+				   color: rgba(255, 255, 255, 0.75);
+				   display: block;
+				   padding:0;
+				   margin-top:10px;
+			   }
+
+			   #logBan> ul.links > li.submenu:hover > ul > li > a {
+				border: 0;
+				color: #5a1a4f;
+				display: block;
+				font-weight: 200;
+				line-height: 2.5rem;
+			}
 
 	#logBan .close {
 		text-decoration: none;
