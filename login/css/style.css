@@ -413,7 +413,7 @@ strong, b {
 }
 
 h1, h2, h3, h5, h6 {
-	color: #4468ca;
+	color: rgba(98, 55, 160, .95);
 }
 
 h4 {
@@ -1068,7 +1068,7 @@ hr {
 	padding-bottom: 20px;
 }
 .style4 .forgot-txt a{
-	color: #4468ca;
+	color: rgba(98, 55, 160, .95);
 	font-size: 15px;
 	line-height: 15px;
 	font-weight: 400;
@@ -1084,7 +1084,7 @@ hr {
 	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 }
 .style4 .sign-up-txt a{
-	color: #4468ca;
+	color: rgba(98, 55, 160, .95);
 	font-size: 15px;
 	line-height: 15px;
 	font-weight: 400;
@@ -1169,7 +1169,7 @@ hr {
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0;
-	background: url(../images/arrow-right-c.svg) no-repeat #4468ca;
+	background: url(../images/arrow-right-c.svg) no-repeat rgba(98, 55, 160, .95);
 	background-size: 23px 23px;
 	background-position: center right 10px;
 }
@@ -1714,7 +1714,7 @@ body {
 	-webkit-justify-content: space-between;
 	-ms-justify-content: space-between;
 	justify-content: space-between;
-	background: #4468ca;
+	background: rgba(98, 55, 160, .95);
 	color: rgba(255, 255, 255, 0.5);
 	cursor: default;
 	height: 3.25rem;
@@ -1841,7 +1841,7 @@ body {
 	-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 	transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 	-webkit-overflow-scrolling: touch;
-	background: #5878d0;
+	background: rgba(98, 55, 160, .75);
 	box-shadow: none;
 	height: 100%;
 	max-width: 80%;
@@ -1913,7 +1913,7 @@ body {
 		#logBan input[type="button"].primary,
 		#logBan button.primary,
 		#logBan .button.primary {
-			background-color: #4468ca;
+			background-color: rgba(98, 55, 160, .95);
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -1923,7 +1923,7 @@ body {
 			#logBan input[type="button"].primary:hover,
 			#logBan button.primary:hover,
 			#logBan .button.primary:hover {
-				background-color: #5878d0;
+				background-color: rgba(98, 55, 160, .75);
 				box-shadow: none;
 			}
 
@@ -1932,7 +1932,7 @@ body {
 				#logBan input[type="button"].primary:hover:active,
 				#logBan button.primary:hover:active,
 				#logBan .button.primary:hover:active {
-					background-color: #365bbf;
+					background-color: rgba(98, 55, 160, 1);
 				}
 
 	#logBan > ul {
